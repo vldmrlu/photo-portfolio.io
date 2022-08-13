@@ -35,7 +35,7 @@ layout: default
             <div class="carousel-inner">
               {% for image in site.static_files %}
               {% if image.path contains 'fulls' %}
-              <div class="carousel-item ratio ratio-16x9 active">
+              <div class="carousel-item ratio ratio-16x9">
                 <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" class="d-block w-100" alt="...">
               </div>
               {% endif %}
