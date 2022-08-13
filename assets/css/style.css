@@ -30,6 +30,6 @@ header .container {
 
 #carousel-main .carousel-item img {
   -o-object-fit: cover;
-     object-fit: contain;
+     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */
