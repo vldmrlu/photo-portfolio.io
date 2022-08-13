@@ -31,14 +31,14 @@ layout: default
     </header>
     <!-- Main -->
     <div id="main">
-        <div id="carousel-main" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="1500" data-bs-pause="false">
+        <div id="carousel-main" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2500" data-bs-pause="false">
             <div class="carousel-inner">
               <div class="carousel-item ratio ratio-16x9 active">
                 <img src="./images/fulls/DSC_0069.jpg" class="d-block w-100" alt="...">
               </div>
               {% for image in site.static_files %}
               <div class="carousel-item ratio ratio-16x9">
-                <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" class="d-block w-100" alt="...">
+                <img src="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" class="d-block w-100" alt="...">
               </div>
               {% endfor %}
         </div>
