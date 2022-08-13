@@ -30,16 +30,19 @@ layout: default
         </div>
     </header>
     <!-- Main -->
-    <div id="main">
-        <div id="carousel-main" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="1500" data-bs-pause="false">
-            <div class="carousel-inner">
-              {% for image in site.static_files %}
-              {% if image.path contains 'fulls' %}
-              <div class="carousel-item ratio ratio-16x9 active">
-                <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" class="d-block w-100" alt="...">
-              </div>
-              {% endif %}
-              {% endfor %}
+    <div id="portfolio">
+        <div class="portfolio container w-100 my-5">
+            <div class="portfolio-row row w-100">
+                {% for image in site.static_files %}
+                {% if image.path contains 'fulls' %}
+                    <div class="portfolio-item col-lg-4 col-md-6 col-12 my-5" data-aos="fade-up">
+                        <a data-fslightbox="gallery" href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" class="img ratio ratio-4x3">
+                            <img class="d-block w-100 shadow-1-strong rounded" src="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" alt="">
+                        </a>
+                    </div>
+                {% endif %}
+                {% endfor %}
+            </div>
         </div>
     </div>
 </div>
