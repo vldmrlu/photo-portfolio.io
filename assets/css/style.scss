@@ -1,0 +1,39 @@
+h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: rgb(133, 133, 133);
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+
+  .container {
+    width: 100%;
+  }
+}
+
+#carousel-main {
+ height: 100vh;
+
+ .carousel-inner {
+   height: 100vh;
+ }
+
+ .carousel-item {
+   height: 100vh;
+
+   img {
+    object-fit: cover;
+   }
+ }
+}
+
+.portfolio-item {
+  img {
+    object-fit: contain;
+  }
+}

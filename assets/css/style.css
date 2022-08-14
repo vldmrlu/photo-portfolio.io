@@ -32,4 +32,9 @@ header .container {
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+.portfolio-item img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 /*# sourceMappingURL=style.css.map */
