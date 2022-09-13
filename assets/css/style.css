@@ -217,9 +217,17 @@ header .container {
      object-fit: cover;
 }
 
+.portfolio-item {
+  -webkit-box-shadow: 0px 0px 2px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .portfolio-item img {
   -o-object-fit: contain;
      object-fit: contain;
+  border-left: 10px solid white;
+  border-right: 10px solid white;
+  border-top: 10px solid white;
 }
 
 .offcanvas-body {
