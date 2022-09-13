@@ -74,11 +74,11 @@ layout: default
                     {% for item in site.data.faq %}
                     <div class="accordion-item">
                       <h3 class="accordion-header" id="header-{{item.title}}">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{item.title}}" aria-expanded="true" aria-controls="collapse-{{item.title}}">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{item.id}}" aria-expanded="false" aria-controls="collapse-{{item.id}}">
                           {{item.title}}
                         </button>
                       </h3>
-                      <div id="collapse-{{item.title}}" class="accordion-collapse collapse show" aria-labelledby="header-{{item.title}}" data-bs-parent="#accordionExample">
+                      <div id="collapse-{{item.id}}" class="accordion-collapse collapse" aria-labelledby="header-{{item.id}}" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                           {{ item.answer}}
                         </div>
