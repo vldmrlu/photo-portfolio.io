@@ -1,4 +1,4 @@
-let portfolioBlock = document.getElementById('portfolioBlock');
+AOS.init();
 
 let burger = document.getElementById('burger');
 
