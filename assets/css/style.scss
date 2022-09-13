@@ -188,6 +188,14 @@ header {
  }
 }
 
+main {
+  overflow: hidden;
+}
+
+#portfolio {
+  overflow: hidden;
+}
+
 .portfolio-row{
   @media (max-width:720px) {
     margin-left: 0 !important;

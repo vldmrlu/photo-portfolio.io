@@ -46,7 +46,11 @@ layout: default
         <section class="contacts">
             <div class="container">
                 <div class="row mb-5 align-items-center">
-                  <div class="col-md-6">
+                  <div class="col-md-6"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-duration="1000"
+                  >
                     <div class="contact-me mb-5">
                       <h2>{{ site.contact.title }}</h2>
                       <h3>{{ site.contact.subtitle }}</h3>
@@ -64,14 +68,21 @@ layout: default
                       <a class="main-btn" href="portfolio.html">My protfolio</a>
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6"
+                  data-aos="fade-bottom"
+                  data-aos-duration="1300"
+                  >
                     <div class="photographer-picture">
                       <img src="./images/static/contact.jpg" alt="photographer-picture">
                     </div>
                   </div>
                 </div>
                 <h3 class="text-center mb-4">Frequently asked question</h3>
-                <div class="accordion" id="accordionExample">
+                <div class="accordion" id="accordionExample"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-duration="1000"
+                >
                     {% for item in site.data.faq %}
                     <div class="accordion-item">
                       <h3 class="accordion-header" id="header-{{item.title}}">

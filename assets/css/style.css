@@ -227,6 +227,14 @@ header .container {
      object-fit: cover;
 }
 
+main {
+  overflow: hidden;
+}
+
+#portfolio {
+  overflow: hidden;
+}
+
 @media (max-width: 720px) {
   .portfolio-row {
     margin-left: 0 !important;
