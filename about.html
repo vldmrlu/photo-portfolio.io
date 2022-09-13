@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <header>
+        <div class="container d-flex">
+            <h1>{{ site.header.title }}</h1>
+            <button id="burger" class="menu-btn ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <span class="menu-btn__line"></span>
+                <span class="menu-btn__line"></span>
+                <span class="menu-btn__line"></span>
+                <span class="menu-btn__line"></span>
+                <span class="menu-btn__close"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Kseniia Sheremet Photographer</h5>
+                    <button id="close-burger" type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="price.html">Price</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="social">
+                        <a class="inst" href="{{ site.header.instagram }}">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a class="fb" href="{{ site.header.facebook }}">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a class="tg" href="{{ site.header.telegram }}">
+                            <i class="bi bi-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-aricle order-2 order-lg-1 col-lg-6 col-md-12">
+                        <h2>{{ site.about.title }}</h2>
+                        <div class="about-text">
+                            {{ site.about.text }}
+                        </div>
+                    </div>
+                    <div class="about-picture order-1 order-lg-2 col-lg-6 col-md-12 mb-5">
+                        <div class="about-img">
+                            <img src="./images/static/about.jpg" alt="about img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
