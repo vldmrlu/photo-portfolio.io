@@ -1,9 +1,5 @@
 let portfolioBlock = document.getElementById('portfolioBlock');
 
-if (portfolioBlock) {
-  AOS.init();
-}
-
 let burger = document.getElementById('burger');
 
 function menuClose(e) {
