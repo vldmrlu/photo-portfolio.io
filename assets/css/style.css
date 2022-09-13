@@ -234,6 +234,10 @@ header .container {
   }
 }
 
+.portfolio-item a {
+  display: block;
+}
+
 .portfolio-item img {
   -o-object-fit: contain;
      object-fit: contain;

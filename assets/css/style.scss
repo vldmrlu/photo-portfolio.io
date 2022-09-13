@@ -196,6 +196,9 @@ header {
 }
 
 .portfolio-item {
+  a {
+    display: block;
+  }
   img {
     object-fit: contain;
   }
