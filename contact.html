@@ -71,16 +71,16 @@ layout: default
                   </div>
                 </div>
                 <div class="accordion" id="accordionExample">
-                    {% for faq in site.faq.question %}
+                    {% for question in site.faq %}
                     <div class="accordion-item">
-                      <h3 class="accordion-header" id="header-{{faq.title}}">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{faq.title}}" aria-expanded="true" aria-controls="collapse-{{faq.title}}">
-                          {{faq.title}}
+                      <h3 class="accordion-header" id="header-{{question.title}}">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{question.title}}" aria-expanded="true" aria-controls="collapse-{{question.title}}">
+                          {{question.title}}
                         </button>
                       </h3>
-                      <div id="collapse-{{faq.title}}" class="accordion-collapse collapse show" aria-labelledby="header-{{faq.title}}" data-bs-parent="#accordionExample">
+                      <div id="collapse-{{question.title}}" class="accordion-collapse collapse show" aria-labelledby="header-{{question.title}}" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                          {{ faq.answer}}
+                          {{ question.answer}}
                         </div>
                       </div>
                     </div>
