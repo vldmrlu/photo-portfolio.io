@@ -1,22 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
-</head>
-<body>
+---
+layout: default
+---
+
+<!-- Wrapper -->
+<div id="wrapper">
+
     <header>
         <div class="container d-flex">
-            <h1>Kseniia Sheremet</h1>
+            <h1>{{ site.header.title }}</h1>
             <button id="burger" class="menu-btn ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                 <span class="menu-btn__line"></span>
                 <span class="menu-btn__line"></span>
@@ -31,24 +22,23 @@
                 </div>
                 <div class="offcanvas-body">
                     <ul>
-                        <li><a href="#">About</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="#">Price</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="price.html">Price</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                     <div class="social">
-                        <a class="inst" href="#">
+                        <a class="inst" href="{{ site.social.instagram }}">
                             <i class="bi bi-instagram"></i>
                         </a>
-                        <a class="fb" href="#">
+                        <a class="fb" href="{{ site.social.facebook }}">
                             <i class="bi bi-facebook"></i>
                         </a>
-                        <a class="tg" href="#">
+                        <a class="tg" href="{{ site.social.telegram }}">
                             <i class="bi bi-telegram"></i>
                         </a>
                     </div>
                 </div>
-            </div>
             </div>
         </div>
     </header>
@@ -58,64 +48,43 @@
               <div class="row row-cols-1 row-cols-lg-3 g-4">
                 <div class="col">
                     <div class="card">
-                      <img src="./img/1.jpg" class="card-img-top" alt="...">
+                      <img src="./images/static/price-1.jpg" class="card-img-top" alt="{{site.price.card1.title}}">
                       <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <ul>
-                          <li>Lorem, ipsum.</li>
-                          <li>Lorem, ipsum.</li>
-                          <li>Lorem, ipsum.</li>
-                          <li>Lorem, ipsum.</li>
-                          <li>Lorem, ipsum.</li>
-                        </ul>
-                        <p class="timer"><i class="bi bi-alarm-fill"></i> 2 hours</p>
+                        <h5 class="card-title">{{site.price.card1.title}}</h5>
+                        <p class="card-text">{{site.price.card1.description}}</p>
+                        <p class="timer"><i class="bi bi-alarm-fill"></i>{{site.price.card1.time}}</p>
                     </div>
                       <div class="card-footer">
                         <i class="bi bi-currency-dollar"></i>
-                        <small class="text-muted">Last updated 3 mins ago</small>
+                        <small class="text-muted">{{site.price.card1.price}}</small>
                       </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card">
-                      <img src="./img/1.jpg" class="card-img-top" alt="...">
+                      <img src="./images/static/price-2.jpg" class="card-img-top" alt="{{site.price.card2.title}}">
                       <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <ul>
-                          <li>Lorem, ipsum.</li>
-                          <li>Lorem, ipsum.</li>
-                          <li>Lorem, ipsum.</li>
-                          <li>Lorem, ipsum.</li>
-                          <li>Lorem, ipsum.</li>
-                        </ul>
-                        <p class="timer"><i class="bi bi-alarm-fill"></i> 2 hours</p>
+                        <h5 class="card-title">{{site.price.card2.title}}</h5>
+                        <p class="card-text">{{site.price.card2.description}}</p>
+                        <p class="timer"><i class="bi bi-alarm-fill"></i>{{site.price.card2.time}}</p>
                     </div>
                       <div class="card-footer">
                         <i class="bi bi-currency-dollar"></i>
-                        <small class="text-muted">Last updated 3 mins ago</small>
+                        <small class="text-muted">{{site.price.card2.price}}</small>
                       </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card">
-                      <img src="./img/1.jpg" class="card-img-top" alt="...">
+                      <img src="./images/static/price-3.jpg" class="card-img-top" alt="{{site.price.card2.title}}">
                       <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <ul>
-                          <li>Lorem, ipsum.</li>
-                          <li>Lorem, ipsum.</li>
-                          <li>Lorem, ipsum.</li>
-                          <li>Lorem, ipsum.</li>
-                          <li>Lorem, ipsum.</li>
-                        </ul>
-                        <p class="timer"><i class="bi bi-alarm-fill"></i> 2 hours</p>
+                        <h5 class="card-title">{{site.price.card2.title}}</h5>
+                        <p class="card-text">{{site.price.card2.description}}</p>
+                        <p class="timer"><i class="bi bi-alarm-fill"></i>{{site.price.card2.time}}</p>
                     </div>
                       <div class="card-footer">
                         <i class="bi bi-currency-dollar"></i>
-                        <small class="text-muted">Last updated 3 mins ago</small>
+                        <small class="text-muted">{{site.price.card2.price}}</small>
                       </div>
                     </div>
                 </div>

@@ -11,6 +11,10 @@ h1 {
   font-size: 30px;
   text-transform: uppercase;
   color: $color-font;
+  margin-bottom: 0;
+  @media (max-width:720px) {
+    font-size: 20px;
+  }
 }
 
 h2 {
@@ -39,6 +43,7 @@ header {
 
   .container {
     width: 100%;
+    align-items: center;
   }
 }
 
@@ -181,6 +186,13 @@ header {
     object-fit: cover;
    }
  }
+}
+
+.portfolio-row{
+  @media (max-width:720px) {
+    margin-left: 0 !important;
+    margin-right: 0 !important; 
+  }
 }
 
 .portfolio-item {

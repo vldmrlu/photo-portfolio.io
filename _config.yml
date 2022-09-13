@@ -24,17 +24,17 @@ about:
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit repellat alias placeat nostrum eos odio, dolores natus quibusdam tempora corporis temporibus suscipit provident exercitationem nam facilis eaque vitae deleniti esse."
 price:
   card-1:
-    title: "card-1"
+    title: "Family Photoset"
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit repellat alias placeat nostrum eos odio, dolores natus quibusdam tempora corporis temporibus suscipit provident exercitationem nam facilis eaque vitae deleniti esse."
     time: "4 hours"
     price: "150"
   card-2:
-    title: "card-2"
+    title: "Black and white Photoset"
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit repellat alias placeat nostrum eos odio, dolores natus quibusdam tempora corporis temporibus suscipit provident exercitationem nam facilis eaque vitae deleniti esse."
     time: "10 hours"
     price: "350"
   card-3:
-    title: "card-3"
+    title: "Commercial Photoset"
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit repellat alias placeat nostrum eos odio, dolores natus quibusdam tempora corporis temporibus suscipit provident exercitationem nam facilis eaque vitae deleniti esse."
     time: "12 hours"
     price: "600"

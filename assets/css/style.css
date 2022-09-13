@@ -9,6 +9,13 @@ h1 {
   font-size: 30px;
   text-transform: uppercase;
   color: #858585;
+  margin-bottom: 0;
+}
+
+@media (max-width: 720px) {
+  h1 {
+    font-size: 20px;
+  }
 }
 
 h2 {
@@ -40,6 +47,9 @@ header {
 
 header .container {
   width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu-btn {
@@ -215,6 +225,13 @@ header .container {
 #carousel-main .carousel-item img {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 720px) {
+  .portfolio-row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
 }
 
 .portfolio-item img {
