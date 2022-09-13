@@ -2,6 +2,7 @@ html, body {
   overflow-x: hidden;
   font-family: 'Oswald', sans-serif;
   letter-spacing: 1px;
+  background: #e8e5d6;
 }
 
 h1 {
@@ -306,6 +307,7 @@ header .container {
 
 .about-img {
   position: relative;
+  z-index: 1;
 }
 
 .about-img img {

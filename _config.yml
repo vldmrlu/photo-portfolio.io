@@ -7,14 +7,14 @@ google_analytics: "UA-46465113-2"
 # UI configs
 header:
   title: "Kseniia Sheremet"
-  telegram: "https://www.facebook.com/ramswaroop"
-  facebook: "https://www.twitter.com/ram__patra"
-  instagram: "https://www.instagram.com/ram_patra"
 footer:
   name: "Hey there, my name is Ram"
   bio: "I am a developer and a tech aficionado from India. Love making teeny tiny apps solving tiny problems in life and now learning photography."
   github: 'Want a website like this for yourself for free? Just <a href="https://github.com/ramswaroop/photography">fork me on github</a> ;)'
-web_design: "AJ"
+social:
+  telegram: "https://www.facebook.com/ramswaroop"
+  facebook: "https://www.twitter.com/ram__patra"
+  instagram: "https://www.instagram.com/ram_patra"
 about:
   title: "Hey, I'm Kseniia and let me introduce myself"
   text:
@@ -28,10 +28,26 @@ price:
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit repellat alias placeat nostrum eos odio, dolores natus quibusdam tempora corporis temporibus suscipit provident exercitationem nam facilis eaque vitae deleniti esse."
     time: "4 hours"
     price: "150"
-social_urls:
-  facebook: "https://www.facebook.com/ramswaroop"
-  twitter: "https://www.twitter.com/ram__patra"
-  instagram: "https://www.instagram.com/ram_patra"
-  dribbble: "https://dribbble.com/rampatra"
-  linkedin: "https://in.linkedin.com/in/ram-patra"
-  github: "https://www.github.com/rampatra"
+  card-2:
+    title: "card-2"
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit repellat alias placeat nostrum eos odio, dolores natus quibusdam tempora corporis temporibus suscipit provident exercitationem nam facilis eaque vitae deleniti esse."
+    time: "10 hours"
+    price: "350"
+  card-3:
+    title: "card-3"
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit repellat alias placeat nostrum eos odio, dolores natus quibusdam tempora corporis temporibus suscipit provident exercitationem nam facilis eaque vitae deleniti esse."
+    time: "12 hours"
+    price: "600"
+contact:
+  title: "Hello, I'am Kseniia Sheremet"
+  subtitle: "Proffesional photographer"
+faq:
+  question:
+    title: "First question"
+    answer: "<strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow."
+  question:
+    title: "Second question"
+    answer: "<strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow."
+  question:
+    title: "Third question"
+    answer: "<strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow."

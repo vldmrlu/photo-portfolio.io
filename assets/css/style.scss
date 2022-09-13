@@ -2,6 +2,7 @@ html,body {
   overflow-x: hidden;
   font-family: 'Oswald', sans-serif;
   letter-spacing: 1px;
+  background: #e8e5d6;
 }
 
 $color-font : rgb(133, 133, 133);
@@ -273,6 +274,7 @@ header {
 
 .about-img {
   position: relative;
+  z-index: 1;
 
   img {
     width: 100%;

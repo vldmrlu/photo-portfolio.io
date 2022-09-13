@@ -1,0 +1,91 @@
+---
+layout: default
+---
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <header>
+        <div class="container d-flex">
+            <h1>{{ site.header.title }}</h1>
+            <button id="burger" class="menu-btn ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <span class="menu-btn__line"></span>
+                <span class="menu-btn__line"></span>
+                <span class="menu-btn__line"></span>
+                <span class="menu-btn__line"></span>
+                <span class="menu-btn__close"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Kseniia Sheremet Photographer</h5>
+                    <button id="close-burger" type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="price.html">Price</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="social">
+                        <a class="inst" href="{{ site.social.instagram }}">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a class="fb" href="{{ site.social.facebook }}">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a class="tg" href="{{ site.social.telegram }}">
+                            <i class="bi bi-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="contacts">
+            <div class="container">
+                <div class="row mb-5">
+                  <div class="col-md-6">
+                    <div class="contact-me mb-5">
+                      <h2>{{ site.contact.title }}</h2>
+                      <h3>{{ site.contact.subtitle }}</h3>
+                      <div class="social-icons">
+                        <a class="inst" href="{{ site.social.instagram }}">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a class="fb" href="{{ site.social.facebook }}">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a class="tg" href="{{ site.social.telegram }}">
+                            <i class="bi bi-telegram"></i>
+                        </a>
+                      </div>
+                      <a class="main-btn" href="/portfolio.html">My protfolio</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="photographer-picture">
+                      <img src="./img/hero.jpg" alt="photographer-picture">
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion" id="accordionExample">
+                    {% for faq in site.faq.question %}
+                    <div class="accordion-item">
+                      <h3 class="accordion-header" id="header-{{faq.title}}">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{faq.title}}" aria-expanded="true" aria-controls="collapse-{{faq.title}}">
+                          {{faq.title}}
+                        </button>
+                      </h3>
+                      <div id="collapse-{{faq.title}}" class="accordion-collapse collapse show" aria-labelledby="header-{{faq.title}}" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          {{ faq.answer}}
+                        </div>
+                      </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+    </main>
