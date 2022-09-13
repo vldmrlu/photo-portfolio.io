@@ -71,7 +71,7 @@ layout: default
                   </div>
                 </div>
                 <div class="accordion" id="accordionExample">
-                    {% for question in site.faq %}
+                    {% for question in site.faq.question %}
                     <div class="accordion-item">
                       <h3 class="accordion-header" id="header-{{question.title}}">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{question.title}}" aria-expanded="true" aria-controls="collapse-{{question.title}}">
