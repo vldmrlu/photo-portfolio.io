@@ -184,13 +184,8 @@ header {
 }
 
 .portfolio-item {
-  box-shadow:  0px 0px 2px 4px rgba(0, 0, 0, 0.1);
-  
   img {
     object-fit: contain;
-    border-left: 10px solid white;
-    border-right: 10px solid white;
-    border-top: 10px solid white;
   }
 }
 
