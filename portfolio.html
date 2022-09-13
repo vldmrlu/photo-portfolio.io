@@ -9,21 +9,35 @@ layout: default
     <header>
         <div class="container d-flex">
             <h1>{{ site.header.title }}</h1>
-            <button class="btn ms-auto btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                Menu
+            <button id="burger" class="menu-btn ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <span class="menu-btn__line"></span>
+                <span class="menu-btn__line"></span>
+                <span class="menu-btn__line"></span>
+                <span class="menu-btn__line"></span>
+                <span class="menu-btn__close"></span>
             </button>
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Kseniia Sheremet Photographer</h5>
+                    <button id="close-burger" type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul>
-                        <li><a href="#">About</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="#">Price</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="price.html">Price</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
+                    <div class="social">
+                        <a class="inst" href="{{ site.header.instagram }}">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a class="fb" href="{{ site.header.facebook }}">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a class="tg" href="{{ site.header.telegram }}">
+                            <i class="bi bi-telegram"></i>
+                        </a>
                     </div>
                 </div>
             </div>
