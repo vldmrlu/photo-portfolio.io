@@ -45,7 +45,7 @@ layout: default
     <main>
         <section class="contacts">
             <div class="container">
-                <div class="row mb-5">
+                <div class="row mb-5 align-items-center">
                   <div class="col-md-6">
                     <div class="contact-me mb-5">
                       <h2>{{ site.contact.title }}</h2>
@@ -70,6 +70,7 @@ layout: default
                     </div>
                   </div>
                 </div>
+                <h3 class="text-center mb-4">Frequently asked question</h3>
                 <div class="accordion" id="accordionExample">
                     {% for item in site.data.faq %}
                     <div class="accordion-item">
